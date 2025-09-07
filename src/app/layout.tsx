@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header"; 
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,9 +14,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export const metadata: Metadata = {
   title: "Yoon Jae Chang - Software Developer Portfolio",
-  description: "Software developer specializing in React, Next.js, and full-stack development. View my projects and experience.",
+  description: "My portolio website to showcase my projects and experience.",
+  icons: {  icon: '/favicon.svg', },
   keywords: ["software developer", "react", "nextjs", "typescript", "portfolio", "web development"],
   authors: [{ name: "Yoon Jae Chang" }],
   creator: "Yoon Jae Chang",
@@ -25,11 +29,6 @@ export const metadata: Metadata = {
     title: "Yoon Jae Chang - Software Developer Portfolio",
     description: "Software developer specializing in React, Next.js, and full-stack development. View my projects and experience.",
     siteName: "Yoon Jae Chang Portfolio",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Yoon Jae Chang - Software Developer Portfolio",
-    description: "Software developer specializing in React, Next.js, and full-stack development. View my projects and experience.",
   },
   robots: {
     index: true,
@@ -47,7 +46,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

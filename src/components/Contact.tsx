@@ -196,13 +196,6 @@ const Contact = () => {
             </form>
           </div>
         </div>
-
-        {/* Footer */}
-        <div className="mt-20 pt-8 border-t border-foreground/10 text-center">
-          <p className="text-foreground/60">
-            © 2025 {personalInfo.name}. All Rights Reserved.
-          </p>
-        </div>
       </div>
     </section>
   );

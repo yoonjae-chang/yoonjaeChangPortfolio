@@ -2,9 +2,9 @@ export const personalInfo = {
   name: "Yoon Jae Chang",
   title: "Software Developer",
   bio: "Hey, I'm Yoon Jae Chang. Here, you can check out what I'm working on. I try my best to create things with ❤",
-  email: "yoonjae.chang@example.com",
+  email: "yoonjaechang244@gmail.com",
   github: "https://github.com/yoonjae-chang",
-  linkedin: "https://linkedin.com/in/yoonjae-chang",
+  linkedin: "https://linkedin.com/in/yoonjaechang",
 };
 
 export const projects = [

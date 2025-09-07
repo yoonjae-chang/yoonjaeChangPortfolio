@@ -36,7 +36,7 @@ const Header = () => {
             onClick={() => scrollToSection("hero")}
             className="text-xl font-bold hover:opacity-80 transition-opacity"
           >
-            YJC
+            Yoon Jae Chang
           </button>
 
           {/* Navigation Links */}

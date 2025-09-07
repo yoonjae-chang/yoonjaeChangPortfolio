@@ -9,26 +9,13 @@ const Hero = () => {
       <div className="max-w-4xl mx-auto text-center">
         {/* Profile Image */}
         <div className="mb-8">
-          <div className="relative w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-6">
+          <div className="relative md:h-90 md:w-90 h-72 w-72 mx-auto border-10 border-secondary mb-6">
             <Image
-              src="/profile-placeholder.jpg"
+              src="/profile/profile-pic.png"
               alt={personalInfo.name}
               fill
-              className="rounded-full object-cover"
+              className="rounded-full w-full h-full object-cover border-10 border-secondary"
               priority
-              onError={(e) => {
-                // Fallback to a colored circle if image doesn't exist
-                const target = e.target as HTMLImageElement;
-                target.style.display = 'none';
-                const parent = target.parentElement;
-                if (parent) {
-                  parent.innerHTML = `
-                    <div class="w-full h-full rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-4xl font-bold">
-                      ${personalInfo.name.split(' ').map(n => n[0]).join('')}
-                    </div>
-                  `;
-                }
-              }}
             />
           </div>
         </div>
