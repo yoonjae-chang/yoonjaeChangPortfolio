@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Lato, Montserrat } from "next/font/google";
 import "./globals.css";
 import HeaderDrop from "@/components/HeaderDrop"; 
 import Footer from "@/components/Footer";
@@ -14,20 +14,24 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const lato = Lato({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-lato' });
+const montserrat = Montserrat({ subsets: ['latin'], weight: ['500'], variable: '--font-montserrat' });
+
 
 export const metadata: Metadata = {
-  title: "Yoon Jae Chang - Software Developer Portfolio",
-  description: "My portolio website to showcase my projects and experience.",
+  title: "Yoon Jae Chang",
+  description: "My portfolio website to showcase my projects and experience.",
   icons: {  icon: '/favicon.svg', },
-  keywords: ["software developer", "react", "nextjs", "typescript", "portfolio", "web development"],
+  keywords: ["software developer", "react", "nextjs", "startup", "portfolio", "web development", "Yoon Jae Chang", "Columbia University", "AI", "ML", "Machine Learning"],
   authors: [{ name: "Yoon Jae Chang" }],
   creator: "Yoon Jae Chang",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://yoonjae-chang.dev",
-    title: "Yoon Jae Chang - Software Developer Portfolio",
-    description: "Software developer specializing in React, Next.js, and full-stack development. View my projects and experience.",
+    title: "Yoon Jae Chang",
+    description: "My portfolio website to showcase my projects and experience.",
     siteName: "Yoon Jae Chang Portfolio",
   },
   robots: {
@@ -44,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.variable} ${lato.variable} ${montserrat.variable}`}
       >
         <HeaderDrop />
         {children}

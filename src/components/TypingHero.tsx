@@ -15,7 +15,7 @@ export default function TypingHero() {
     const interval = setInterval(() => {
       setCurrentPhraseIndex((prev) => (prev + 1) % phrases.length);
       setKey((prev) => prev + 1); // Force re-render of typing animation
-    }, 3000); // Change phrase every 4 seconds
+    }, 4000); // Change phrase every 4 seconds
 
     return () => clearInterval(interval);
   }, [phrases.length]);

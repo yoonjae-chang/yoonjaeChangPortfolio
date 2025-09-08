@@ -7,67 +7,60 @@ export const personalInfo = {
   linkedin: "https://linkedin.com/in/yoonjaechang",
 };
 
+
+export type ProjectProps = {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  achievement: string;
+  demoUrl: string;
+  githubUrl: string;
+}
+
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with React, Node.js, and PostgreSQL",
-    image: "/project-placeholder.jpg",
-    technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    demoUrl: "https://demo-ecommerce.example.com",
-    githubUrl: "https://github.com/yoonjae-chang/ecommerce-platform",
-    featured: true,
+    title: "ShadowU",
+    description: "A peer-to-peer marketplace connecting high school students with college hosts to experience authentic campus life.",
+    image: "/projects/shadowu.png",
+    technologies: ["Next.js", "TypeScript", "Supabase", "Supabase Auth and Edge Functions", "Stripe", "Tailwind CSS"],
+    achievement: "",
+    demoUrl: "https://shadowu.org",
+    githubUrl: "N/A",
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "Collaborative task management tool with real-time updates",
-    image: "/project-placeholder.jpg",
+    title: "Viralysis",
+    description: "AI and LLM research on understanding virality and recreating viral content on social media.",
+    image: "/projects/viralysis.png",
     technologies: ["Next.js", "TypeScript", "Prisma", "Socket.io"],
-    demoUrl: "https://task-manager.example.com",
-    githubUrl: "https://github.com/yoonjae-chang/task-manager",
-    featured: true,
+    achievement: "",
+    demoUrl: "N/A",
+    githubUrl: "N/A",
   },
   {
     id: 3,
-    title: "Weather Dashboard",
-    description: "Beautiful weather app with location-based forecasts",
-    image: "/project-placeholder.jpg",
-    technologies: ["React", "OpenWeather API", "Chart.js"],
-    demoUrl: "https://weather-dashboard.example.com",
-    githubUrl: "https://github.com/yoonjae-chang/weather-dashboard",
-    featured: false,
+    title: "OncoVAF",
+    description: "Developed computational antisense sense RNA differential tool that integrates into the neoantigen selection pipeline, improving bioinformatics workflows for cancer.",
+    image: "/projects/oncovaf.png",
+    technologies: ["Python", "Docker"],
+    achievement: "",
+    demoUrl: "N/A",
+    githubUrl: "N/A",
   },
   {
     id: 4,
-    title: "Portfolio Website",
-    description: "Personal portfolio built with Next.js and Tailwind CSS",
-    image: "/project-placeholder.jpg",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-    demoUrl: "https://yoonjae-chang.dev",
-    githubUrl: "https://github.com/yoonjae-chang/portfolio",
-    featured: false,
+    title: "mFISHQuant",
+    description: "Developed and validated methods for multiplex RNA mFISH imaging and qPCR expression analysis by creating R-based analysis pipelines.",
+    image: "/projects/mfishquant.png",
+    technologies: ["Python", "R", "QuPath"],
+    achievement: "",
+    demoUrl: "N/A",
+    githubUrl: "N/A",
   },
-  {
-    id: 5,
-    title: "Chat Application",
-    description: "Real-time chat app with rooms and file sharing",
-    image: "/project-placeholder.jpg",
-    technologies: ["React", "Firebase", "Material-UI"],
-    demoUrl: "https://chat-app.example.com",
-    githubUrl: "https://github.com/yoonjae-chang/chat-app",
-    featured: false,
-  },
-  {
-    id: 6,
-    title: "Data Visualization Tool",
-    description: "Interactive data visualization dashboard for analytics",
-    image: "/project-placeholder.jpg",
-    technologies: ["D3.js", "React", "Python", "FastAPI"],
-    demoUrl: "https://data-viz.example.com",
-    githubUrl: "https://github.com/yoonjae-chang/data-visualization",
-    featured: false,
-  },
+
 ];
 
 export const experiences = [
