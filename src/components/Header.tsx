@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,7 +37,7 @@ const Header = () => {
             onClick={() => scrollToSection("hero")}
             className="text-xl font-bold hover:opacity-80 transition-opacity"
           >
-            Yoon Jae Chang
+            <Image src="/favicon.svg" alt="Yoon Jae Chang" width={52} height={52} />
           </button>
 
           {/* Navigation Links */}

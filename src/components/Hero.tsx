@@ -3,36 +3,36 @@
 import Image from "next/image";
 import { personalInfo } from "@/lib/data";
 
+import TypingHero from "./TypingHero";
+
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto text-center">
+    <section id="hero" className="
+        flex items-center justify-center px-4 sm:px-6 lg:px-8
+        min-h-[70vh]
+    ">
+      <div className="max-w-4xl mx-auto text-center md:mt-20">
         {/* Profile Image */}
         <div className="mb-8">
-          <div className="relative md:h-90 md:w-90 h-72 w-72 mx-auto border-10 border-secondary mb-6">
+          <div className="relative md:h-95 md:w-95 h-72 w-72 mx-auto mb-6">
             <Image
               src="/profile/profile-pic.png"
               alt={personalInfo.name}
               fill
-              className="rounded-full w-full h-full object-cover border-10 border-secondary"
+              className="rounded-full w-full h-full object-cover border-8 border-primary"
+
+              // className="rounded-full w-full h-full object-cover border-4 border-[#505423]"
               priority
             />
           </div>
         </div>
 
-        {/* Name and Title */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-          {personalInfo.name}
-        </h1>
-        
-        <h2 className="text-xl sm:text-2xl lg:text-3xl text-foreground/80 mb-8">
-          {personalInfo.title}
-        </h2>
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-foreground">
+          Hello, I am
+        </h1> 
 
-        {/* Bio */}
-        <p className="text-lg sm:text-xl text-foreground/70 mb-12 max-w-2xl mx-auto leading-relaxed">
-          {personalInfo.bio}
-        </p>
+        <TypingHero />
+
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
