@@ -16,7 +16,7 @@ const Projects = () => {
             Featured Work
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            I love to create things, and I'm always working on something new! 
+            I love to create things, and I&apos;m always working on something new!
             You can view some of my favorite projects below.
           </p>
         </div>

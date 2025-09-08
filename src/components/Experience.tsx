@@ -96,7 +96,7 @@ const Experience = () => {
             }}
             className="bg-foreground text-background px-8 py-3 rounded-full hover:opacity-90 transition-opacity font-medium text-lg"
           >
-            Let's Connect
+            Let&apos;s Connect
           </button>
         </div>
       </div>

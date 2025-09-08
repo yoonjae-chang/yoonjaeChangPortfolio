@@ -29,13 +29,13 @@ const Contact = () => {
     try {
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      // For now, we'll just show success and reset the form
-      // In a real implementation, you'd send this to your backend or a service like Formspree
+      // For now, we&apos;ll just show success and reset the form
+      // In a real implementation, you&apos;d send this to your backend or a service like Formspree
       console.log("Form submitted:", formData);
       
       setSubmitStatus("success");
       setFormData({ name: "", email: "", message: "" });
-    } catch (error) {
+    } catch {
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
@@ -51,8 +51,8 @@ const Contact = () => {
             Contact Me
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            Have a project in mind or want to collaborate? I'd love to hear from you. 
-            Let's create something amazing together!
+            Have a project in mind or want to collaborate? I&apos;d love to hear from you. 
+            Let&apos;s create something amazing together!
           </p>
         </div>
 
@@ -61,7 +61,7 @@ const Contact = () => {
           <div>
             <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
             <p className="text-foreground/70 mb-8 leading-relaxed">
-              I'm always open to discussing new opportunities, interesting projects, 
+              I&apos;m always open to discussing new opportunities, interesting projects, 
               or just having a chat about technology and development. Feel free to reach out!
             </p>
 
@@ -181,7 +181,7 @@ const Contact = () => {
               {submitStatus === "success" && (
                 <div className="p-4 bg-green-500/10 border border-green-500/20 rounded-xl">
                   <p className="text-green-600 text-sm">
-                    Thank you for your message! I'll get back to you soon.
+                    Thank you for your message! I&apos;ll get back to you soon.
                   </p>
                 </div>
               )}
