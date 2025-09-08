@@ -25,9 +25,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/80 backdrop-blur-md border-b border-foreground/10"
-          : "bg-transparent"
+        isScrolled && "bg-card/80 backdrop-blur-md border-b border-foreground/10"
       }`}
     >
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,7 +54,7 @@ const Header = () => {
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="bg-foreground text-background px-4 py-2 rounded-full hover:opacity-90 transition-opacity"
+              className="bg-foreground text-card px-4 py-2 rounded-full hover:opacity-90 transition-opacity"
             >
               Contact Me
             </button>

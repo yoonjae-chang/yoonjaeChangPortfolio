@@ -8,12 +8,12 @@ const Projects = () => {
   const otherProjects = projects.filter(project => !project.featured);
 
   return (
-    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/90">
+    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/70 mt-20">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            Featured Work
+            What I am working on and have worked on
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
             I love to create things, and I&apos;m always working on something new!
