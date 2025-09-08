@@ -17,12 +17,12 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-
-        {projects.map((project) => (
-          <ProjectCard key={project.id} {...project} />
-        ))}
+        <div className="flex flex-wrap gap-4 items-center justify-center">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} {...project} />
+          ))}
         </div>
+
         </div>
     </section>
   );

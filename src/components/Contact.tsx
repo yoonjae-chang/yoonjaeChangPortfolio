@@ -9,38 +9,8 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value, 
-    }));
-  };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus("idle");
-
-    // Simulate form submission (replace with actual form handling)
-    try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      // For now, we&apos;ll just show success and reset the form
-      // In a real implementation, you&apos;d send this to your backend or a service like Formspree
-      console.log("Form submitted:", formData);
-      
-      setSubmitStatus("success");
-      setFormData({ name: "", email: "", message: "" });
-    } catch {
-      setSubmitStatus("error");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
@@ -119,82 +89,6 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-foreground/5 border border-foreground/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-foreground/30 focus:border-transparent transition-all"
-                  placeholder="Enter your name"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
-                  Your Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-foreground/5 border border-foreground/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-foreground/30 focus:border-transparent transition-all"
-                  placeholder="Enter your email"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Your Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={5}
-                  className="w-full px-4 py-3 bg-foreground/5 border border-foreground/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-foreground/30 focus:border-transparent transition-all resize-none"
-                  placeholder="Tell me about your project or just say hello!"
-                />
-              </div>
-
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-foreground text-background py-3 px-6 rounded-xl font-medium hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {isSubmitting ? "Sending..." : "Send Message"}
-              </button>
-
-              {/* Status Messages */}
-              {submitStatus === "success" && (
-                <div className="p-4 bg-green-500/10 border border-green-500/20 rounded-xl">
-                  <p className="text-green-600 text-sm">
-                    Thank you for your message! I&apos;ll get back to you soon.
-                  </p>
-                </div>
-              )}
-
-              {submitStatus === "error" && (
-                <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-xl">
-                  <p className="text-red-600 text-sm">
-                    Something went wrong. Please try again or contact me directly via email.
-                  </p>
-                </div>
-              )}
-            </form>
-          </div>
         </div>
       </div>
     </section>

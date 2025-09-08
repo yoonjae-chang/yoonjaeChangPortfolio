@@ -5,7 +5,7 @@ import { GithubIcon } from "lucide-react";
 
 const ProjectCard = ({ title, description, image, technologies, demoUrl, githubUrl }: ProjectProps) => {
   return (
-    <div className="block transition-transform duration-100 hover:scale-[1.02] relative ">
+    <div className="block transition-transform duration-100 hover:scale-[1.02] relative w-100">
       <article
         className="h-150 rounded-lg overflow-hidden bg-white shadow-md border-5 border-foreground/85 hover:shadow-xl hover:bg-gray-50 transition duration-150 ease-out"
         style={{ fontFamily: 'Georgia, serif' }}

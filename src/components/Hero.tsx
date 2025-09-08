@@ -11,7 +11,7 @@ const Hero = () => {
         flex items-center justify-center px-4 sm:px-6 lg:px-8
         min-h-[70vh]
     ">
-      <div className="max-w-4xl mx-auto text-center md:mt-20">
+      <div className="max-w-4xl mx-auto text-center md:mt-40 mt-20">
         {/* Profile Image */}
         <div className="mb-8">
           <div className="relative md:h-95 md:w-95 h-72 w-72 mx-auto mb-6">
@@ -35,7 +35,7 @@ const Hero = () => {
 
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <button
             onClick={() => {
               const element = document.getElementById("projects");
@@ -59,10 +59,10 @@ const Hero = () => {
           >
             Get In Touch
           </button>
-        </div>
+        </div> */}
 
         {/* Social Links */}
-        <div className="flex justify-center space-x-6 mt-12">
+        <div className="flex justify-center space-x-6 ">
           <a
             href={personalInfo.github}
             target="_blank"
