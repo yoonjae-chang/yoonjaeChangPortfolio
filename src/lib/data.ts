@@ -62,22 +62,22 @@ export const projects = [
     technologies: "Python, R, QuPath",
     links: [],
   },
-  {
-    id: 5,
-    title: "More Coming Soon...",
-    description: "Project on the best essay writing assistant in the world.",
-    image: "/projects/morecomingsoon.png",
-    technologies: "",
-    links: [],
-  },
-  {
-    id: 6,
-    title: "More Coming Soon...",
-    description: "Not really sure yet what I want to do here but want to incorporate AI agents...",
-    image: "/projects/morecomingsoon.png",
-    technologies: "",
-    links: [],
-  },
+  // {
+  //   id: 5,
+  //   title: "More Coming Soon...",
+  //   description: "Project on the best essay writing assistant in the world.",
+  //   image: "/projects/morecomingsoon.png",
+  //   technologies: "",
+  //   links: [],
+  // },
+  // {
+  //   id: 6,
+  //   title: "More Coming Soon...",
+  //   description: "Not really sure yet what I want to do here but want to incorporate AI agents...",
+  //   image: "/projects/morecomingsoon.png",
+  //   technologies: "",
+  //   links: [],
+  // },
 
 ];
 
