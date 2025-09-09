@@ -42,7 +42,7 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="[@media(min-width:824px)]:text-lg text-base font-semibold">Email</h4>
+                  <h4 className="text-foreground/70 [@media(min-width:824px)]:text-lg text-base font-bold">Email</h4>
                   <p className="text-foreground/70 [@media(min-width:824px)]:text-[18px] text-[16px]">{personalInfo.email}</p>
                 </div>
               </a>
@@ -59,7 +59,7 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="[@media(min-width:824px)]:text-lg text-base font-semibold">LinkedIn</h4>
+                  <h4 className="text-foreground/70 [@media(min-width:824px)]:text-lg text-base font-bold">LinkedIn</h4>
                   <p className="text-foreground/70 [@media(min-width:824px)]:text-[18px] text-[16px]">Connect with me</p>
                 </div>
               </a>
@@ -76,7 +76,7 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="[@media(min-width:824px)]:text-lg text-base font-semibold">GitHub</h4>
+                  <h4 className="text-foreground/70 [@media(min-width:824px)]:text-lg text-base font-bold">GitHub</h4>
                   <p className="text-foreground/70 [@media(min-width:824px)]:text-[18px] text-[16px]">Check out my code</p>
                 </div>
               </a>

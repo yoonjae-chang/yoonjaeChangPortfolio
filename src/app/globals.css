@@ -101,24 +101,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--background);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--foreground);
-  opacity: 0.3;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  opacity: 0.5;
-}
 
 /* Focus styles for accessibility */
 button:focus-visible,

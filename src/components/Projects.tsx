@@ -6,7 +6,7 @@ import { projects } from "@/lib/data";
 const Projects = () => {
 
   return (
-    <section id="projects" className="pb-10 pt-20  px-4 sm:px-6 lg:px-8 bg-black/82 mt-20">
+    <section id="projects" className="pb-30 pt-20  px-4 sm:px-6 lg:px-8 bg-black/82 mt-20">
         <div className="flex flex-col items-center justify-center mx-auto md:px-0 px-8 max-w-[1370px]"> 
         <div className="text-left mb-16 text-card w-full">
           <h2 className="text-3xl sm:text-4xl lg:text-[55px] mb-4  font-inter font-bold">
