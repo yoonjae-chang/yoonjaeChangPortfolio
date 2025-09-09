@@ -24,7 +24,7 @@ export default function TypingHero() {
     <div className="w-full text-center h-20">
       <TypingAnimation
         key={key}
-        className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-primary-foreground w-200"
+        className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-4 text-primary-foreground w-200"
         duration={110}
         delay={0}
       >

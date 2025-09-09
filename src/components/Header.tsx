@@ -41,12 +41,17 @@ const Header = () => {
             onClick={() => scrollToSection("hero")}
             className="text-xl font-bold hover:opacity-80 transition-opacity cursor-pointer"
           >
-            <Image src="/favicon.svg" alt="Yoon Jae Chang" width={72} height={72} />
-            
+            <Image
+              src="/favicon.svg"
+              alt="Yoon Jae Chang"
+              width={72}
+              height={72}
+              className="w-12 h-12 sm:w-15 sm:h-15 md:w-18 md:h-18 lg:w-20 lg:h-20"
+            />            
           </button>
           <button
               onClick={() => scrollToSection("projects")}
-              className="text-black font-montserrat font-extrabold md:text-2xl text-lg hover:cursor-pointer hover:text-gray-700 transition-all duration-300"
+              className="text-black font-montserrat font-extrabold md:text-2xl text-[15px] hover:cursor-pointer hover:text-gray-700 transition-all duration-300"
             >
               {isScrolled ? 
               "Work" :
@@ -58,7 +63,7 @@ const Header = () => {
             </button>
             <button
               onClick={() => scrollToSection("experience")}
-              className="text-black font-montserrat font-extrabold md:text-2xl text-lg hover:cursor-pointer hover:text-gray-700 transition-all duration-300"
+              className="text-black font-montserrat font-extrabold md:text-2xl text-[15px] hover:cursor-pointer hover:text-gray-700 transition-all duration-300"
             >
                 {isScrolled ? 
                 "Experience" :
@@ -75,7 +80,7 @@ const Header = () => {
           <div className="flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-black font-montserrat font-extrabold md:text-2xl text-lg hover:cursor-pointer hover:bg-black hover:text-white transition-all duration-300 rounded-sm border-black px-2 py-2 border-4"
+              className="text-black font-montserrat font-extrabold md:text-2xl text-[15px] hover:cursor-pointer hover:bg-black hover:text-white transition-all duration-300 rounded-sm border-black px-2 py-2 border-4"
             >
               Get In Touch
             </button>

@@ -8,30 +8,27 @@ import TypingHero from "./TypingHero";
 const Hero = () => {
   return (
     <section id="hero" className="
-        flex items-center justify-center px-4 sm:px-6 lg:px-8
-        min-h-[70vh]
+        flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8
+        sm:min-h-[70vh] min-h-[40vh]
     ">
-      <div className="max-w-4xl mx-auto text-center md:mt-20 mt-14">
         {/* Profile Image */}
-        <div className="mb-8">
-          <div className="relative md:h-95 md:w-95 h-72 w-72 mx-auto mb-6">
+          <div className="mt-6 relative mx-auto rounded-md w-[90%] bg-white aspect-[100/60]  [@media(min-width:1050px)]:w-225 border-5 border-primary">
             <Image
               src="/profile/profile-pic.png"
               alt={personalInfo.name}
               fill
-              className="rounded-full w-full h-full object-cover border-5 border-primary"
-
-              // className="rounded-full w-full h-full object-cover border-4 border-[#505423]"
-              priority
-            />
+              objectFit="cover"
+              className=""
+            />            
           </div>
+
+        <div className="text-center text-3xl sm:text-5xl lg:text-6xl font-bold mt-2 z-90 text-foreground">
+          Hello, I am
+        </div> 
+        <div className="mt-1 md:h-20 h-15">
+          <TypingHero />
         </div>
 
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-foreground">
-          Hello, I am
-        </h1> 
-
-        <TypingHero />
 
 
         {/* CTA Buttons */}
@@ -62,7 +59,7 @@ const Hero = () => {
         </div> */}
 
         {/* Social Links */}
-        <div className="flex justify-center space-x-6 ">
+        <div className="flex justify-center space-x-6 mb-[-30px]">
           <a
             href={personalInfo.github}
             target="_blank"
@@ -94,7 +91,6 @@ const Hero = () => {
             </svg>
           </a>
         </div>
-      </div>
     </section>
   );
 };

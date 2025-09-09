@@ -5,7 +5,7 @@ const TechnicalSkills = () => {
     Technical Skills and Technologies
   </h3>
 
-  <div className="flex 2xl:flex-row flex-col gap-10 max-w-7xl mx-auto">
+  <div className="flex [@media(min-width:1100px)]:px-0 px-8 [@media(min-width:1100px)]:flex-row flex-col gap-10 max-w-7xl mx-auto">
     <div className="w-full">
       <h4 className="text-xl font-semibold mb-4 text-foreground/90">Languages</h4>
       <div className="flex flex-wrap justify-center gap-2 sm:gap-3">

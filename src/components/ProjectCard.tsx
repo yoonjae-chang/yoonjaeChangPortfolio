@@ -5,7 +5,7 @@ import { Link as LinkIcon, GlobeIcon, GithubIcon } from "lucide-react";
 
 const ProjectCard = ({ title, description, image, technologies, links }: ProjectProps) => {
   return (
-    <div className="block transition-transform duration-100 hover:scale-[1.02] relative sm:w-110 w-98">
+    <div className="block transition-transform duration-100 hover:scale-[1.02] relative [@media(min-width:554px)]:w-110 w-98">
       <article
         className="h-128 rounded-lg overflow-hidden bg-white shadow-md border-4 border-foreground/85 hover:shadow-xl hover:bg-gray-50 transition duration-150 ease-out"
         style={{ fontFamily: 'Georgia, serif' }}
