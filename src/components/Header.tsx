@@ -45,7 +45,7 @@ const Header = () => {
           </button>
           <button
               onClick={() => scrollToSection("projects")}
-              className="text-black font-montserrat font-extrabold text-2xl hover:cursor-pointer  hover:text-card transition-all duration-300"
+              className="text-black font-montserrat font-extrabold text-2xl hover:cursor-pointer hover:text-gray-700 transition-all duration-300"
             >
               <Highlighter action="highlight" color="#D98255">  
                 Work
@@ -54,7 +54,7 @@ const Header = () => {
             </button>
             <button
               onClick={() => scrollToSection("experience")}
-              className="text-black font-montserrat font-extrabold text-2xl hover:cursor-pointer  hover:text-card transition-all duration-300"
+              className="text-black font-montserrat font-extrabold text-2xl hover:cursor-pointer hover:text-gray-700 transition-all duration-300"
             >
                 <Highlighter action="highlight" color="#87CEFA">
                   Experience
