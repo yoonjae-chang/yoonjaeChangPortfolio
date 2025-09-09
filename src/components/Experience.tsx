@@ -2,7 +2,6 @@
 
 import { experiences, aboutMe } from "@/lib/data";
 import IndividualExperiences from "./IndividualExperiences";
-import TechnicalSkills from "./TechnicalSkills";
 
 
 const Experience = () => {
@@ -13,7 +12,7 @@ const Experience = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-5 ">Professional Experience</h2>
-          <p className="text-[19px] text-foreground/70 max-w-3xl mx-auto">
+          <p className="md:text-[19px] text-[17px] text-foreground/70 max-w-3xl mx-auto">
             {aboutMe}
           </p>
         </div>

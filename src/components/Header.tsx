@@ -17,6 +17,7 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -26,16 +27,16 @@ const Header = () => {
 
   return (
     <header
-      className="top-0 left-0 right-0 z-50 transition-all duration-300"
+      className={!isScrolled ? "mt-10 top-0 left-0 right-0 z-50 transition-all duration-300":
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-card/70 backdrop-blur-sm border-foreground/10 py-2"
+        }
     >
       
-      <div className="w-full h-6 bg-card/80 mb-11">
-        
-      </div>
+
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-7"> 
+          <div className="flex items-center md:space-x-7 space-x-4"> 
           <button
             onClick={() => scrollToSection("hero")}
             className="text-xl font-bold hover:opacity-80 transition-opacity cursor-pointer"
@@ -45,31 +46,38 @@ const Header = () => {
           </button>
           <button
               onClick={() => scrollToSection("projects")}
-              className="text-black font-montserrat font-extrabold text-2xl hover:cursor-pointer hover:text-gray-700 transition-all duration-300"
+              className="text-black font-montserrat font-extrabold md:text-2xl text-lg hover:cursor-pointer hover:text-gray-700 transition-all duration-300"
             >
+              {isScrolled ? 
+              "Work" :
               <Highlighter action="highlight" color="#D98255">  
                 Work
               </Highlighter>
+              }
               
             </button>
             <button
               onClick={() => scrollToSection("experience")}
-              className="text-black font-montserrat font-extrabold text-2xl hover:cursor-pointer hover:text-gray-700 transition-all duration-300"
+              className="text-black font-montserrat font-extrabold md:text-2xl text-lg hover:cursor-pointer hover:text-gray-700 transition-all duration-300"
             >
+                {isScrolled ? 
+                "Experience" :
+                
                 <Highlighter action="highlight" color="#87CEFA">
                   Experience
-                </Highlighter>{" "}
+                </Highlighter>
+                }
 
              
             </button>
           </div>
           {/* Navigation Links */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-black font-montserrat font-extrabold text-2xl hover:cursor-pointer hover:bg-black hover:text-white transition-all duration-300 rounded-sm border-black px-2 py-2 border-4"
+              className="text-black font-montserrat font-extrabold md:text-2xl text-lg hover:cursor-pointer hover:bg-black hover:text-white transition-all duration-300 rounded-sm border-black px-2 py-2 border-4"
             >
-              Contact Me
+              Get In Touch
             </button>
           </div>
         </div>
