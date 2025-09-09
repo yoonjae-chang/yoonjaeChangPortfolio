@@ -1,25 +1,20 @@
 "use client";
 
-import { experiences } from "@/lib/data";
+import { experiences, aboutMe } from "@/lib/data";
 import IndividualExperiences from "./IndividualExperiences";
+import TechnicalSkills from "./TechnicalSkills";
 
-function chunk<T>(arr: T[], size = 2): T[][] {
-  const out: T[][] = [];
-  for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
-  return out;
-}
 
 const Experience = () => {
-  const pairs = chunk(experiences, 2); // [ [e0,e1], [e2,e3], ... ]
 
   return (
-    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-foreground/5">
-      <div className="max-w-5xl mx-auto">
+    <section id="experience" className="pt-20 pb-10 px-4 sm:px-6 lg:px-8 bg-foreground/5">
+      <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Experience</h2>
-          <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            My professional journey as a software developer, building impactful solutions and growing with amazing teams.
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-5 ">Professional Experience</h2>
+          <p className="text-[19px] text-foreground/70 max-w-3xl mx-auto">
+            {aboutMe}
           </p>
         </div>
 
@@ -44,21 +39,6 @@ const Experience = () => {
         </div>
 
         <IndividualExperiences />
-
-        {/* Skills */}
-        <div className="mt-20 text-center">
-          <h3 className="text-2xl font-bold mb-8">Technical Skills</h3>
-          <div className="flex flex-wrap justify-center gap-3">
-            {["JavaScript","TypeScript","React","Next.js","Node.js","Python","PostgreSQL","MongoDB","AWS","Docker","Git","Tailwind CSS"].map((s) => (
-              <span
-                key={s}
-                className="px-4 py-2 bg-background border border-foreground/20 rounded-full text-foreground/80 hover:border-foreground/40 hover:bg-foreground/5 transition-all"
-              >
-                {s}
-              </span>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

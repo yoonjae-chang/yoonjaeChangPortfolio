@@ -8,15 +8,20 @@ export const personalInfo = {
 };
 
 
+export const aboutMe = "I am a Computer Science student at Columbia University (the School of Engineering and Applied Science). My interests include AI/ML/Software engineering. Listed below is a timeline of my experiences that I have been involved in.";
+
 export type ProjectProps = {
   id: number;
   title: string;
   description: string;
   image: string;
+  video?: string;
   technologies: string;
-  achievement: string;
-  demoUrl: string;
-  githubUrl: string;
+  links?: readonly {
+    type: string;
+    href: string;
+  }[];
+
 }
 
 export const projects = [
@@ -26,9 +31,11 @@ export const projects = [
     description: "A peer-to-peer marketplace connecting high school students with college hosts to experience authentic campus life.",
     image: "/projects/shadowu.png",
     technologies: "Next.js, TypeScript, Supabase, Supabase Auth and Edge Functions, Stripe, Tailwind CSS",
-    achievement: "",
-    demoUrl: "https://shadowu.org",
-    githubUrl: "N/A",
+    links: [{
+      type: "Website",
+      href: "https://shadowu.org",
+    },
+    ],
   },
   {
     id: 2,
@@ -36,9 +43,7 @@ export const projects = [
     description: "AI and LLM research on understanding virality and recreating viral content on social media.",
     image: "/projects/viralysis.png",
     technologies: "Next.js, Typescript, Python, FastAPI, Gemini (VEO 3), Langfuse, OpenAI (GPT-4o Mini, GPT-o3 Mini)",
-    achievement: "",
-    demoUrl: "N/A",
-    githubUrl: "N/A",
+    links: [],
   },
 
   {
@@ -47,9 +52,7 @@ export const projects = [
     description: "Developed computational antisense/sense RNA differential tool that integrates into bioinformatics workflows for cancer vaccines.",
     image: "/projects/oncovaf.png",
     technologies: "Python, Docker, Immuno.cwl \"Workflow\"",
-    achievement: "",
-    demoUrl: "N/A",
-    githubUrl: "N/A",
+    links: [],
   },
   {
     id: 4,
@@ -57,9 +60,7 @@ export const projects = [
     description: "Developed and validated methods for multiplex RNA mFISH imaging and qPCR expression analysis by creating R-based analysis pipelines.",
     image: "/projects/mfishquant.png",
     technologies: "Python, R, QuPath",
-    achievement: "",
-    demoUrl: "N/A",
-    githubUrl: "N/A",
+    links: [],
   },
   {
     id: 5,
@@ -67,9 +68,7 @@ export const projects = [
     description: "Project on the best essay writing assistant in the world.",
     image: "/projects/morecomingsoon.png",
     technologies: "",
-    achievement: "",
-    demoUrl: "N/A",
-    githubUrl: "N/A",
+    links: [],
   },
   {
     id: 6,
@@ -77,9 +76,7 @@ export const projects = [
     description: "Not really sure yet what I want to do here but want to incorporate AI agents...",
     image: "/projects/morecomingsoon.png",
     technologies: "",
-    achievement: "",
-    demoUrl: "N/A",
-    githubUrl: "N/A",
+    links: [],
   },
 
 ];
@@ -91,7 +88,7 @@ export const experiences = [
     position: "AI & LLM Researcher",
     duration: "Aug 2025 – Present",
     description:
-      "Researching how large language models (LLMs) can replicate and augment human cognitive strategies, advancing the lab’s work on computational design for human-AI collaboration.",
+      "Researching how large language models (LLMs) and AI can replicate and augment human cognitive strategies, advancing the lab’s human-AI collaboration work.",
   },
   {
     id: 2,

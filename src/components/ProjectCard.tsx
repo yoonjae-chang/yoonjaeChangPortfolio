@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { ProjectProps } from "@/lib/data";
-import { GithubIcon } from "lucide-react";
+import Link from "next/link";
+import { Link as LinkIcon, GlobeIcon, GithubIcon } from "lucide-react";
 
-
-const ProjectCard = ({ title, description, image, technologies, demoUrl, githubUrl }: ProjectProps) => {
+const ProjectCard = ({ title, description, image, technologies, links }: ProjectProps) => {
   return (
-    <div className="block transition-transform duration-100 hover:scale-[1.02] relative w-105">
+    <div className="block transition-transform duration-100 hover:scale-[1.02] relative w-110">
       <article
-        className="h-122 rounded-lg overflow-hidden bg-white shadow-md border-4 border-foreground/85 hover:shadow-xl hover:bg-gray-50 transition duration-150 ease-out"
+        className="h-128 rounded-lg overflow-hidden bg-white shadow-md border-4 border-foreground/85 hover:shadow-xl hover:bg-gray-50 transition duration-150 ease-out"
         style={{ fontFamily: 'Georgia, serif' }}
       >
         <h3 className="pl-6 pt-3 pb-1 text-[27px] font-lato font-extrabold mb-1 text-primary-foreground/85">{title}</h3>
@@ -47,11 +47,22 @@ const ProjectCard = ({ title, description, image, technologies, demoUrl, githubU
             </div>
           </div>
 
-          {githubUrl!=="N/A" && <GithubIcon
-            className="w-4 h-4 cursor-pointer"
-            onClick={() => window.open(githubUrl, "_blank")}
-          />    
-          }
+          {links && links.length > 0 && (
+          <div className="mt-[-8px] flex flex-wrap flex-row gap-2">
+          {links?.map((link, idx) => (
+            <Link
+              key={idx}
+              href={link?.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-md border border-primary-foreground bg-gray-100 px-3 py-1.5 text-sm text-foreground shadow-sm transition-all duration-200 hover:text-card hover:shadow-md"
+            >
+              <LinkIcon className="w-4 h-4" />
+              <span className="capitalize">{link.type}</span>
+            </Link>
+          ))}
+        </div>
+      )}
         </div>
       </article>
     </div>
