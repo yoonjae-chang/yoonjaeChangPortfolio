@@ -12,7 +12,7 @@ const ProjectCard = ({ title, description, image, technologies, links }: Project
         <h3 className="pl-6 pt-3 pb-1 text-[27px] font-lato font-extrabold mb-1 text-primary-foreground/85">{title}</h3>
 
         
-        {image !=="/projects/viralysis.png" ? <div className="relative h-56 mx-auto rounded-md w-[90%] bg-white">
+        {image !=="/projects/viralysis.png" ? <div className="relative h-56 mx-auto rounded-md w-[70%] bg-white">
           <Image
             src={image}
             alt={`${title}'s profile`}
@@ -20,7 +20,7 @@ const ProjectCard = ({ title, description, image, technologies, links }: Project
             objectFit="contain"
             className="object-contain"
           />
-        </div> : <div className="relative h-56 mx-auto rounded-md w-[90%] bg-f5f5f5">
+        </div> : <div className="relative h-56 mx-auto rounded-md w-[70%] bg-f5f5f5">
           <Image
             src={image}
             alt={`${title}'s profile`}
