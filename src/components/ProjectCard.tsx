@@ -5,14 +5,14 @@ import { Link as LinkIcon, GlobeIcon, GithubIcon } from "lucide-react";
 
 const ProjectCard = ({ title, description, image, technologies, links }: ProjectProps) => {
   return (
-    <div className="block transition-transform duration-100 hover:scale-[1.02] relative [@media(min-width:554px)]:w-110 w-98">
+    <div className="block transition-transform duration-100 hover:scale-[1.02] relative [@media(min-width:554px)]:w-110 w-80">
       <article
-        className="md:h-130 h-135 rounded-lg overflow-hidden bg-white shadow-md border-4 border-foreground/85 hover:shadow-xl hover:bg-gray-50 transition duration-150 ease-out"
+        className="md:h-130 h-130 rounded-lg overflow-hidden bg-white shadow-md border-4 border-foreground/85 hover:shadow-xl hover:bg-gray-50 transition duration-150 ease-out"
       >
         <h3 className="pl-6 pt-3 pb-1 text-[27px] font-lato font-extrabold mb-1 text-primary-foreground/85">{title}</h3>
 
         
-        {image !=="/projects/viralysis.png" ? <div className="relative h-56 mx-auto rounded-md w-[70%] bg-white">
+        {image !=="/projects/viralysis.png" ? <div className="relative [@media(min-width:554px)]:h-56 h-40 mx-auto rounded-md w-[90%] bg-white">
           <Image
             src={image}
             alt={`${title}'s profile`}
@@ -20,7 +20,7 @@ const ProjectCard = ({ title, description, image, technologies, links }: Project
             objectFit="contain"
             className="object-contain"
           />
-        </div> : <div className="relative h-56 mx-auto rounded-md w-[70%] bg-f5f5f5">
+        </div> : <div className="relative [@media(min-width:554px)]:h-56 h-40 mx-auto rounded-md w-[90%] bg-f5f5f5">
           <Image
             src={image}
             alt={`${title}'s profile`}
@@ -39,7 +39,7 @@ const ProjectCard = ({ title, description, image, technologies, links }: Project
           </p>
 
           {/* Technologies */}
-          <div className="space-y-2">
+          <div className="[@media(min-width:554px)]:mt-0 mt-5 space-y-2">
             <h4 className="md:text-[17px] text-[15px] font-semibold text-gray-500 uppercase tracking-wide">Technologies</h4>
             <div className="mt-[-8px] md:text-[17px] text-[15px]">
               {technologies}
