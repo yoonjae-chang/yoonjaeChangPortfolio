@@ -39,46 +39,69 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Ideation",
+    description: "AI-powered idea generation tool that helps users prototype their ideas at the speed of light: hack creativity with AI.",
+    image: "/projects/prototypingideas.png",
+    technologies: "Next.js, Typescript, Supabase, Supabase Auth and Edge Functions, OpenAI (GPT-4o Mini, GPT-4o)",
+    links: [
+      {
+        type: "Website",
+        href: "https://prototypingideas.com",
+      },
+      { 
+        type: "GitHub",
+        href: "https://github.com/yoonjae-chang/ideation",
+      },
+      // {
+      //   type: "Video",
+      //   href: "",
+      // }
+    ],
+  },
+  {
+    id: 3,
     title: "Viralysis",
     description: "AI and LLM research on understanding virality and recreating viral content on social media.",
     image: "/projects/viralysis.png",
     technologies: "Next.js, Typescript, Python, FastAPI, Gemini (VEO 3), Langfuse, OpenAI (GPT-4o Mini, GPT-o3 Mini)",
-    links: [],
+    links: [
+      {
+        type: "Columbia Lab Work",
+        href: "https://www.cs.columbia.edu/~chilton/",
+      }
+    ],
   },
 
   {
-    id: 3,
+    id: 4,
     title: "OncoVAF",
     description: "Developed computational antisense/sense RNA differential tool that integrates into bioinformatics workflows for cancer vaccines.",
     image: "/projects/oncovaf.png",
-    technologies: "Python, Docker, Immuno.cwl \"Workflow\"",
-    links: [],
+    technologies: "Python, Docker, Immuno.cwl \"Workflow\", SAM/BAM/CRAM, MIT IGV",
+    links: [
+      {
+        type: "Resarch Paper",
+        href: "https://drive.google.com/file/d/1RoVytcrvrAHT9TBag1J-kS7fiONLoeRg/view?usp=sharing",
+      },
+      {
+        type: "Research Poster",
+        href: "https://drive.google.com/file/d/1vMwWI4zhyVNy2_SjET6RjeVEgiruNH1v/view?usp=sharing",
+      }
+    ],
   },
   {
-    id: 4,
+    id: 5,
     title: "mFISHQuant",
     description: "Developed and validated methods for multiplex RNA mFISH imaging and qPCR expression analysis by creating R-based analysis pipelines.",
     image: "/projects/mfishquant.png",
     technologies: "Python, R, QuPath",
-    links: [],
+    links: [
+      {
+        type: "Research Abstract",
+        href: "https://drive.google.com/file/d/1N5onsClpL9xB55QTTbxZQGxUgBonE0Xh/view?usp=sharing",
+      }
+    ],
   },
-  // {
-  //   id: 5,
-  //   title: "More Coming Soon...",
-  //   description: "Project on the best essay writing assistant in the world.",
-  //   image: "/projects/morecomingsoon.png",
-  //   technologies: "",
-  //   links: [],
-  // },
-  // {
-  //   id: 6,
-  //   title: "More Coming Soon...",
-  //   description: "Not really sure yet what I want to do here but want to incorporate AI agents...",
-  //   image: "/projects/morecomingsoon.png",
-  //   technologies: "",
-  //   links: [],
-  // },
-
 ];
 
 export const experiences = [
