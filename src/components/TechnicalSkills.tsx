@@ -1,11 +1,16 @@
+"use client";
+
+import Skills from "./Skills";
 const TechnicalSkills = () => {
   return (
-    <div className="py-10 text-center bg-secondary-foreground/10">
-  <h3 className="text-3xl font-bold mb-12 tracking-tight text-foreground">
+    <div className="py-10 text-center bg-secondary-foreground/10 px-20">
+  {/* <h3 className="text-3xl font-bold mb-12 tracking-tight text-foreground">
     Technical Skills and Technologies
-  </h3>
+  </h3> */}
 
-  <div className="flex [@media(min-width:1100px)]:px-0 px-8 [@media(min-width:1100px)]:flex-row flex-col gap-10 max-w-7xl mx-auto">
+      <Skills />
+
+  {/* <div className="flex [@media(min-width:1100px)]:px-0 px-8 [@media(min-width:1100px)]:flex-row flex-col gap-10 max-w-7xl mx-auto">
     <div className="w-full">
       <h4 className="text-xl font-semibold mb-4 text-foreground/90">Languages</h4>
       <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
@@ -85,8 +90,8 @@ const TechnicalSkills = () => {
           </span>
         ))}
       </div>
-    </div>
-  </div>
+    </div> */}
+  {/* </div> */}
 </div>
   );
 };
