@@ -26,6 +26,11 @@ const Header = () => {
   };
 
   return (
+    <>   
+    {isScrolled && (
+    <div className="h-25">
+    </div>
+    )}
     <header
       className={!isScrolled ? "mt-10 top-0 left-0 right-0 z-50 transition-all duration-300":
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-card/70 backdrop-blur-sm border-foreground/10 py-2"
@@ -88,6 +93,7 @@ const Header = () => {
         </div>
       </nav>
     </header>
+    </>
   );
 };
 

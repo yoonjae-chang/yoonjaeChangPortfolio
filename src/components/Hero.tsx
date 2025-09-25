@@ -22,7 +22,7 @@ const Hero = () => {
             />            
           </div>
 
-        <div className="text-center text-3xl sm:text-5xl lg:text-6xl font-bold mt-2 z-90 text-foreground">
+        <div className="text-center text-3xl sm:text-5xl lg:text-6xl font-bold mt-2  text-foreground">
           Hello, I am
         </div> 
         <div className="mt-1 md:h-20 h-15">

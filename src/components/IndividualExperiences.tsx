@@ -3,7 +3,8 @@ import { experiences } from "@/lib/data";
 const IndividualExperiences = () => {
 
   const height = "h-25";
-return (    
+return (  
+  <>  
   <div className="hidden md:flex md:flex-col gap-y-24 relative">
     <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-foreground/20" />
   <div className="flex flex-col gap-y-24">
@@ -64,8 +65,32 @@ return (
                 </article>
               </div>
            </div>
+        
         </div>
+
+        <div className="relative md:hidden">
+          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-foreground/20" />
+          <div className="space-y-10">
+            {experiences.map((e) => (
+              <div key={e.id} className="relative pl-12">
+                <div className="absolute left-2 top-6 w-4 h-4 bg-foreground rounded-full border-4 border-background" />
+                <article className="bg-card-foreground rounded-xl p-6 shadow-sm border border-foreground/10">
+                  <div className="inline-block bg-foreground/10 text-foreground/80 px-3 py-1 rounded-full text-sm font-medium mb-3">
+                    {e.duration}
+                  </div>
+                  <h3 className="text-xl font-bold mb-1">{e.position}</h3>
+                  <h4 className="text-lg text-foreground/80 mb-4">{e.company}</h4>
+                  <p className="text-foreground/70 leading-relaxed">{e.description}</p>
+                </article>
+              </div>
+            ))}
+          </div>
+        </div>
+
+
+        </>
     )
+    
 };
 
 export default IndividualExperiences;
