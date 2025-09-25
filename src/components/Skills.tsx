@@ -72,7 +72,7 @@ const StyledWrapper = styled.div`
 
   .main-title {
     text-align: center;
-    font-weight: 900;
+    font-weight: 850;
     font-size: 2.5em;
     color: #A83400;
     margin-bottom: 40px;

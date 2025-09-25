@@ -3,7 +3,7 @@
 import Skills from "./Skills";
 const TechnicalSkills = () => {
   return (
-    <div className="py-10 text-center bg-secondary-foreground/10 px-20">
+    <div className="md:py-15 py-10 text-center bg-secondary-foreground/10 px-20">
   {/* <h3 className="text-3xl font-bold mb-12 tracking-tight text-foreground">
     Technical Skills and Technologies
   </h3> */}

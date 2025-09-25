@@ -10,8 +10,8 @@ return (
         <div className="grid grid-cols-2 gap-12">
              <div key={experiences[0]!.id} className="5 relative">
                 {/* Timeline dot */}
-                <div className="absolute left-full top-6 w-4 h-4 bg-foreground/80 rounded-full border-4 border-background shadow-sm translate-x-[-50%] z-10" />
-                <article className="bg-background rounded-2xl p-6 shadow-sm border border-foreground/10 hover:shadow-md transition-shadow">
+                <div className="absolute left-full top-6 w-4 h-4 bg-foreground/80 rounded-full border-4 border-background shadow-md translate-x-[-50%] z-10" />
+                <article className="bg-card-foreground rounded-2xl p-6 shadow-md border border-foreground/10 hover:shadow-lg transition-shadow">
                   <div className="inline-block bg-foreground/10 text-foreground/80 px-3 py-1 rounded-full text-sm font-medium mb-3">
                     {experiences[0]!.duration}
                   </div>
@@ -23,9 +23,9 @@ return (
               </div>
               <div key={experiences[1]!.id} className="5 relative">
                 {/* Timeline dot */}
-                <div className="absolute right-full top-[132px] w-4 h-4 bg-foreground/80 rounded-full border-4 border-background shadow-sm translate-x-[50%] z-10" />
+                <div className="absolute right-full top-[132px] w-4 h-4 bg-foreground/80 rounded-full border-4 border-background shadow-md translate-x-[50%] z-10" />
                 <div className={height} />
-                <article className="bg-background rounded-2xl p-6 shadow-sm border border-foreground/10 hover:shadow-md transition-shadow">
+                <article className="bg-card-foreground rounded-2xl p-6 shadow-md border border-foreground/10 hover:shadow-lg transition-shadow">
                   <div className="inline-block bg-foreground/10 text-foreground/80 px-3 py-1 rounded-full text-sm font-medium mb-3">
                     {experiences[1]!.duration}
                   </div>
@@ -39,8 +39,8 @@ return (
         <div className="grid grid-cols-2 gap-12 mt-[-140px]">
              <div key={experiences[2]!.id} className="5 relative">
                 {/* Timeline dot */}
-                <div className="absolute left-full top-6 w-4 h-4 bg-foreground/80 rounded-full border-4 border-background shadow-sm translate-x-[-50%] z-10" />
-                <article className="bg-background rounded-2xl p-6 shadow-sm border border-foreground/10 hover:shadow-md transition-shadow">
+                <div className="absolute left-full top-6 w-4 h-4 bg-foreground/80 rounded-full border-4 border-background shadow-md translate-x-[-50%] z-10" />
+                <article className="bg-card-foreground rounded-2xl p-6 shadow-md border border-foreground/10 hover:shadow-lg transition-shadow">
                   <div className="inline-block bg-foreground/10 text-foreground/80 px-3 py-1 rounded-full text-sm font-medium mb-3">
                     {experiences[2]!.duration}
                   </div>
@@ -52,9 +52,9 @@ return (
               </div>
               <div key={experiences[3]!.id} className="5 relative">
                 {/* Timeline dot */}
-                <div className="absolute right-full top-[132px] w-4 h-4 bg-foreground/80 rounded-full border-4 border-background shadow-sm translate-x-[50%] z-10" />
+                <div className="absolute right-full top-[132px] w-4 h-4 bg-foreground/80 rounded-full border-4 border-background shadow-md translate-x-[50%] z-10" />
                 <div className={height} />
-                <article className="bg-background rounded-2xl p-6 shadow-sm border border-foreground/10 hover:shadow-md transition-shadow">
+                <article className="bg-card-foreground rounded-2xl p-6 shadow-md border border-foreground/10 hover:shadow-lg transition-shadow">
                   <div className="inline-block bg-foreground/10 text-foreground/80 px-3 py-1 rounded-full text-sm font-medium mb-3">
                     {experiences[3]!.duration}
                   </div>

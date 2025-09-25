@@ -13,7 +13,7 @@ const Contact = () => {
 
 
   return (
-    <section id="contact" className="[@media(min-width:824px)]:py-10 py-8 px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="[@media(min-width:824px)]:py-15 py-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         {/* <div className="text-center [@media(min-width:824px)]:mb-16 mb-8">
