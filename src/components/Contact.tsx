@@ -27,8 +27,8 @@ const Contact = () => {
           <div>
             <h3 className="[@media(min-width:824px)]:text-4xl text-3xl font-bold [@media(min-width:824px)]:mb-6 mb-4">Get In Touch!</h3>
             <p className=" mb-8 leading-relaxed text-primary-foreground [@media(min-width:824px)]:text-[18px] text-[16px]">
-            I&apos;m always open to discussing new opportunities, exciting projects, or just having a chat about technology and development. Feel free to reach out!
-            Have a project in mind or want to collaborate? I&apos;d love to hear from you. Let&apos;s create something amazing together!            </p>
+            I&apos;m always open to discussing new opportunities, exciting projects, or just having a chat. Feel free to reach out!
+            Have a project in mind or want to collaborate? I&apos;d love to hear from you. Let&apos;s create something together!            </p>
           </div>
 
           <div className="space-y-2">

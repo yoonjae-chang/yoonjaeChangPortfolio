@@ -12,7 +12,7 @@ const Hero = () => {
         sm:min-h-[70vh] min-h-[40vh]
     ">
         {/* Profile Image */}
-          <div className="mt-6 relative mx-auto rounded-md w-[90%] bg-white aspect-[100/60]  [@media(min-width:1050px)]:w-225 border-5 border-primary">
+          <div className="mt-6 relative mx-auto rounded-md w-[90%] bg-white aspect-[100/60]  [@media(min-width:1050px)]:w-225 sm:border-5 border-3 border-primary">
             <Image
               src="/profile/profile-pic.png"
               alt={personalInfo.name}
@@ -22,7 +22,7 @@ const Hero = () => {
             />            
           </div>
 
-        <div className="text-center text-3xl sm:text-5xl lg:text-6xl font-bold mt-2  text-foreground">
+        <div className="text-center text-2xl sm:text-5xl lg:text-6xl font-bold mt-2  text-foreground">
           Hello, I am
         </div> 
         <div className="mt-1 md:h-20 h-15">
